@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic Synatax os JS</title>
+  </head>
+  <body>
+    <h1 id="title">Hello JS</h1>
+
+    <form>
+      <h6 id="answer"></h6>
+      <input type="number" id="num1" /> <br />
+      <input type="number" id="num2" /> <br />
+      <br />
+
+      <button type="button" onclick="addNumbers()">Calculate</button>
+    </form>
+
+    <!-- <p id="text"></p> -->
+
+    
+  </body>
+</html>
+<script type="text/javascript">
+    function addNumbers() {
+      var number1 = parseInt(document.getElementById('num1').value);
+      var number2 = parseInt(document.getElementById('num2').value);
+
+      
+
+      var result = number1 + number2;
+
+      document.getElementById('answer').innerHTML = result;
+    }
+  </script>
